@@ -6,9 +6,12 @@ cotizaciones = [
     libras = 144.48,
 ]
 
-cotizaciones.forEach( (element) => {
-    console.log(cotizaciones)
-} )
+for (let i = 0; i < cotizaciones.length; i++) {
+    console.log(cotizaciones[i].nombre);
+    console.log(cotizaciones[i].valor);
+
+}
+
 
 function convertir() {
     let conversion = parseInt(document.getElementById("valor").value);
@@ -41,5 +44,10 @@ function convertir() {
 }
 
 
+function pulsar(e) {
+    if (e.keyCode === 13 ) {
+        
+    }
+}
 
 
