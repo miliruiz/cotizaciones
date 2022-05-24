@@ -1,5 +1,6 @@
 body {
     background-color: #ffff00;
+    
 }
 
 h3 {
@@ -16,7 +17,7 @@ h3 {
 
 .monedas {
     width: 500px;
-    margin-left: 400px;
+    margin: auto;
 }
 
 #valor{
@@ -26,5 +27,9 @@ h3 {
 #cotizador{
     border-radius: 5px;
     font-size: 18px;
+    background-color: #ffff00;
+}
+
+.swal {
     background-color: #ffff00;
 }
