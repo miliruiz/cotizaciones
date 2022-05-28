@@ -64,3 +64,6 @@ function updateValue(e) {
 }
 
 
+localStorage.setItem("cotizaciones", JSON.stringify(valores));
+
+console.log(localStorage.getItem("cotizaciones"));
