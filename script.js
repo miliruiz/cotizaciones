@@ -67,3 +67,21 @@ function updateValue(e) {
 localStorage.setItem("cotizaciones", JSON.stringify(valores));
 
 console.log(localStorage.getItem("cotizaciones"));
+
+
+let tiposDolar = document.getElementById('tiposDolar')
+
+fetch('https://criptoya.com/api/dolar')
+
+.then(response => response.json()) 
+.then(datos => {
+    let {blue, oficial, solidario, ccb} = datos
+    tiposDolar.innerHTML = `
+        <h3> Tipos de dolar </h3>
+        <p> Dolar Oficial: ${oficial}</p>
+        <p> Dolar Blue: ${blue}</p>
+        <p> Dolar Solidario: ${solidario}</p>
+        <p> Dolar Ccb: ${ccb}</p>
+    
+    `
+})
